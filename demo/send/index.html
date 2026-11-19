@@ -25,7 +25,7 @@
   h2 { font-size: 20px; line-height: 1.2; margin: 30px 0 10px; letter-spacing: -0.005em; }
   section p { margin: 10px 0 0; color: var(--cds-text-secondary); max-width: 80ch; }
   code { font: 0.9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: var(--cds-chart-reference-tint); padding: 1px 5px; border-radius: 5px; color: var(--cds-text-primary); }
-  figure { margin: 0; padding: 10px; border: 1px solid var(--cds-chart-axis); border-radius: 10px; }
+  figure { margin: 0; padding: 10px; border: 1px solid var(--cds-chart-axis); border-radius: 10px; max-width: 1000px; }
   figure svg { display: block; width: 100%; height: auto; }
   .pair { display: grid; grid-template-columns: minmax(0, 1fr); column-gap: 24px; }
   table { border-collapse: collapse; width: 100%; max-width: 1000px; font-size: 14px; }
@@ -41,7 +41,6 @@
   .b:focus-visible { outline: 3px solid var(--cds-chart-categorical-1); outline-offset: 2px; }
   /* On a wide window the map takes the left side and the controls take the right side. */
   @media (min-width: 1040px) {
-    .pair { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
     #sim > div { display: grid !important; grid-template-columns: minmax(0, 1.7fr) minmax(340px, 1fr); column-gap: 20px; align-content: start; padding: 18px !important; }
     #sim > div > svg { grid-column: 1; grid-row: 1 / span 12; align-self: start; }
     #sim > div > div { grid-column: 2; }
